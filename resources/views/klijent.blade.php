@@ -15,6 +15,7 @@
                 <table id="klijenti" class="table table-striped table-bordered no-wrap">
                     <thead>
                     <tr>
+                        <th>R.Br.</th>
                         <th>Prezime</th>
                         <th>Ime</th>
                         <th>adresa</th>
@@ -27,6 +28,7 @@
                     <tbody >
                     @foreach($klijenti as $klijent)
                         <tr>
+                            <td>{{$loop->iteration}}</td>
                             <td>{{$klijent['prezime']}}</td>
                             <td>{{$klijent['ime']}}</td>
                             <td>{{$klijent['adresa']}}</td>

@@ -94,9 +94,11 @@
     <script type="text/javascript">
         $( function() {
             $( "#datum_rodjenja" ).datepicker({
+                date: "01/01/1950",
                 dateFormat : 'yy/mm/dd',
                 changeMonth: true,
-                changeYear: true
+                changeYear: true,
+                yearRange: "1950:2010"
             });
         } );
     </script>

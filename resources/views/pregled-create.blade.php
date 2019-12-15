@@ -144,12 +144,13 @@
                             </label>
                         </div>
                     </div>
-                    <div class="btn-group btn-group-toggle btn-group-justified mb-2" data-toggle="buttons">
                         @foreach ($dijagnoze as $dijagnoza)
+                        <div class="btn-group btn-group-toggle btn-group-justified mb-2" data-toggle="buttons">
                             <label class="btn btn-outline-secondary">
                                 <input type="checkbox" class="custom-checkbox" name="{{$dijagnoza->naziv}}">
                                 <label for="{{$dijagnoza->naziv}}">{{$dijagnoza->naziv}}</label>
                             </label>
+                        </div>
                         @endforeach
                     </div>
                     <div class="input-group mb-2">
